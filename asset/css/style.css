@@ -1,0 +1,20 @@
+/* generale */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+#nav{
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    line-height: 20px;
+    font-size: 20px;  
+    text-align: center; 
+}
+/* griglia */
+#griglia{
+    background-color: aqua;
+    height: 80vh;
+}
