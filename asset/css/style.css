@@ -13,8 +13,35 @@
     font-size: 20px;  
     text-align: center; 
 }
-/* griglia */
-#griglia{
+/* bg_main */
+.bg_main{
     background-color: aqua;
     height: 80vh;
+}
+/* griglia */
+.griglia{
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* celle */
+/* celle griglia 10x10 */
+.box10{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
+/* celle griglia 9x9 */
+.box9{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+}
+/* celle griglia 7x7 */
+.box7{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
 }
