@@ -11,6 +11,8 @@ btnPlay.addEventListener(`click`,function(){
         for (let i = 1; i<= 100; i++){
             //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo numeri alle celle
+            cella.innerHTML += i
             //aggiungo classi alle celle
             cella.classList.add(`box10`);
             grid.appendChild(cella)
@@ -25,6 +27,8 @@ btnPlay.addEventListener(`click`,function(){
         for (let i = 1; i<= 81; i++){
             //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo numeri alle celle
+            cella.innerHTML += i
             //aggiungo classi alle celle
             cella.classList.add(`box9`);
             grid.appendChild(cella)
@@ -39,6 +43,8 @@ btnPlay.addEventListener(`click`,function(){
         for (let i = 1; i<= 49; i++){
             //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo numeri alle celle
+            cella.innerHTML += i
             //aggiungo classi alle celle
             cella.classList.add(`box7`);
             grid.appendChild(cella)
