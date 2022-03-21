@@ -45,3 +45,7 @@
     height: calc(100% / 7);
     border: 1px solid black;
 }
+/* box cliccato */
+.boxCliccato{
+    background-color:darkcyan;
+}

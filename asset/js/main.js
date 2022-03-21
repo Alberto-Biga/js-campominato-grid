@@ -9,27 +9,46 @@ btnPlay.addEventListener(`click`,function(){
     //griglia 10x10
     if( sceltaUtente == "1"){
         for (let i = 1; i<= 100; i++){
+            //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo classi alle celle
             cella.classList.add(`box10`);
             grid.appendChild(cella)
+            //modifico colore celle al click
+            cella.addEventListener(`click`,function (){
+                console.log(this)
+                this.classList.add(`boxCliccato`)
+            })
         }
     //griglia 9x9
     }else if( sceltaUtente == "2"){
         for (let i = 1; i<= 81; i++){
+            //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo classi alle celle
             cella.classList.add(`box9`);
             grid.appendChild(cella)
+            //modifico colore celle al click
+            cella.addEventListener(`click`,function (){
+                console.log(this)
+                this.classList.add(`boxCliccato`)
+            })
         }
     //griglia 7x7
     }else if( sceltaUtente == "3"){
         for (let i = 1; i<= 49; i++){
+            //creo tutte le celle
             let cella = document.createElement(`div`);
+            //aggiungo classi alle celle
             cella.classList.add(`box7`);
             grid.appendChild(cella)
+            //modifico colore celle al click
+            cella.addEventListener(`click`,function (){
+                console.log(this)
+                this.classList.add(`boxCliccato`)
+            })
         }
     }
-
-
-
+    
 })
 
