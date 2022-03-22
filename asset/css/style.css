@@ -12,6 +12,7 @@
     line-height: 20px;
     font-size: 20px;  
     text-align: center; 
+    align-items: center;
 }
 /* bg_main */
 .bg_main{
@@ -33,18 +34,24 @@
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
+    align-items: center;
+    text-align: center;
 }
 /* celle griglia 9x9 */
 .box9{
     width: calc(100% / 9);
     height: calc(100% / 9);
     border: 1px solid black;
+    align-items: center;
+    text-align: center;
 }
 /* celle griglia 7x7 */
 .box7{
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px solid black;
+    align-items: center;
+    text-align: center;
 }
 /* box cliccato */
 .boxCliccato{
