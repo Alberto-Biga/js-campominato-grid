@@ -1,5 +1,3 @@
-//array nutrito da funzione numero random
-let array = [];
 //funzione per stampa griglia
 let btnPlay= document.getElementById(`play`);
 //al click del bottone play parte
@@ -34,24 +32,21 @@ btnPlay.addEventListener(`click`,function(){
             cella.classList.add(`box7`);
         }          
         //modifico colore celle al click
-        cella.addEventListener(`click`,function (){
-            console.log(this)
+        cella.addEventListener(`click`,function (){            
             this.classList.add(`boxCliccato`)
         })
     }       
 });
 //funzione per generare numero random tra 1 e 100 
-//DA RISOLVERE DUPLICATI
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min)
-};    
 
-for(y = 1; y <= 100; y++){   
-    let numeroRandom = getRandomInt(1, 100);
-    do{
-        array.push(numeroRandom)
-    } while (!array.includes(numeroRandom));
+//array nutrito da funzione numero random
+let array = [];
+//ogni ciclo pusho un numero
+for(y=0;y<=100;y++){
+    array.push(y);
 }
-console.log(array);
+//funzione per generare numero random
+function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5 )    
+}
+array = shuffle(array)
