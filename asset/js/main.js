@@ -22,6 +22,18 @@ btnPlay.addEventListener(`click`,function(){
         let cella = document.createElement(`div`);
         grid.appendChild(cella);
         //aggiungo numeri casuali da 1 a 100 alle celle (no doppioni)
+        //array nutrito da funzione numero random
+        let array = [];
+        //ogni ciclo pusho un numero
+        for( y=0 ; y < numCelle +1 ;y++){
+            array.push(y);
+        }
+        //funzione per generare numero random
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5 )    
+        }
+        array = shuffle(array)
+        //stampo numeri dentro le celle
         cella.innerHTML += array[i];
         //aggiungo classi alle celle
         if(numCelle == 100){
@@ -37,16 +49,3 @@ btnPlay.addEventListener(`click`,function(){
         })
     }       
 });
-//funzione per generare numero random tra 1 e 100 
-
-//array nutrito da funzione numero random
-let array = [];
-//ogni ciclo pusho un numero
-for(y=0;y<=100;y++){
-    array.push(y);
-}
-//funzione per generare numero random
-function shuffle(array) {
-    return array.sort(() => Math.random() - 0.5 )    
-}
-array = shuffle(array)
