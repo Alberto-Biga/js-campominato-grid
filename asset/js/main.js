@@ -15,8 +15,8 @@ btnPlay.addEventListener(`click`,function(){
     }else if( sceltaUtente == "3"){
         numCelle = 49;
     }
-    for (let i = 1; i<= numCelle; i++){
-        //creo tutte le celle
+    //creo tutte le celle
+    for (let i = 1; i<= numCelle; i++){        
         let cella = document.createElement(`div`);
         //aggiungo numeri alle celle
         cella.innerHTML += i
